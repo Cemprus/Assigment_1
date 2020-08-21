@@ -1,5 +1,6 @@
 package ATM.Controller;
 
+import ATM.Model.ATM;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
@@ -26,4 +27,11 @@ public class Controller {
     private Label money2;
     @FXML
     private Label money3;
+
+    ATM atm;
+
+    public void setAtm(ATM atm) {
+        this.atm = atm;
+    }
+
 }
