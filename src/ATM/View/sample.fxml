@@ -79,7 +79,7 @@
                                         <Font name="Times New Roman" size="24.0" />
                                     </font>
                                 </Label>
-                                <TextField fx:id="withdrawMoney" prefHeight="57.0" prefWidth="89.0" style="-fx-border-style: hidden solid dotted hidden;" />
+                                <TextField fx:id="withdrawMoney" prefHeight="57.0" prefWidth="89.0" promptText="1500" style="-fx-border-style: hidden solid dotted hidden;" />
                             </HBox>
                         <Label fx:id="result6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden hidden solid hidden;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7">
                             <font>
@@ -132,7 +132,7 @@
                                         <Font name="Times New Roman" size="24.0" />
                                     </font>
                                 </Label>
-                                <TextField fx:id="withdrawMoney1" prefHeight="57.0" prefWidth="89.0" style="-fx-border-style: hidden solid dotted hidden;" />
+                                <TextField fx:id="withdrawMoney1" prefHeight="57.0" prefWidth="89.0" promptText="700" style="-fx-border-style: hidden solid dotted hidden;" />
                             </HBox>
                         <HBox GridPane.rowIndex="3">
                             <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="57.0" prefWidth="126.0" style="-fx-border-style: hidden hidden dotted hidden;" text="Withdraw">
@@ -140,7 +140,7 @@
                                         <Font name="Times New Roman" size="24.0" />
                                     </font>
                                 </Label>
-                                <TextField fx:id="withdrawMoney2" prefHeight="57.0" prefWidth="89.0" style="-fx-border-style: hidden solid dotted hidden;" />
+                                <TextField fx:id="withdrawMoney2" prefHeight="57.0" prefWidth="89.0" promptText="400" style="-fx-border-style: hidden solid dotted hidden;" />
                             </HBox>
                         <HBox GridPane.rowIndex="4">
                             <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="57.0" prefWidth="126.0" style="-fx-border-style: hidden hidden dotted hidden;" text="Withdraw">
@@ -148,7 +148,7 @@
                                         <Font name="Times New Roman" size="24.0" />
                                     </font>
                                 </Label>
-                                <TextField fx:id="withdrawMoney3" prefHeight="57.0" prefWidth="89.0" style="-fx-border-style: hidden solid dotted hidden;" />
+                                <TextField fx:id="withdrawMoney3" prefHeight="57.0" prefWidth="89.0" promptText="1100" style="-fx-border-style: hidden solid dotted hidden;" />
                             </HBox>
                         <HBox GridPane.rowIndex="5">
                             <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="57.0" prefWidth="126.0" style="-fx-border-style: hidden hidden dotted hidden;" text="Withdraw">
@@ -156,7 +156,7 @@
                                         <Font name="Times New Roman" size="24.0" />
                                     </font>
                                 </Label>
-                                <TextField fx:id="withdrawMoney4" prefHeight="57.0" prefWidth="89.0" style="-fx-border-style: hidden solid dotted hidden;" />
+                                <TextField fx:id="withdrawMoney4" prefHeight="57.0" prefWidth="89.0" promptText="1000" style="-fx-border-style: hidden solid dotted hidden;" />
                             </HBox>
                         <HBox GridPane.rowIndex="6">
                             <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="57.0" prefWidth="126.0" style="-fx-border-style: hidden hidden dotted hidden;" text="Withdraw">
@@ -164,7 +164,7 @@
                                         <Font name="Times New Roman" size="24.0" />
                                     </font>
                                 </Label>
-                                <TextField fx:id="withdrawMoney5" prefHeight="57.0" prefWidth="89.0" style="-fx-border-style: hidden solid dotted hidden;" />
+                                <TextField fx:id="withdrawMoney5" prefHeight="57.0" prefWidth="89.0" promptText="700" style="-fx-border-style: hidden solid dotted hidden;" />
                             </HBox>
                         <HBox GridPane.rowIndex="7">
                             <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="57.0" prefWidth="126.0" style="-fx-border-style: hidden hidden dotted hidden;" text="Withdraw">
@@ -172,7 +172,7 @@
                                         <Font name="Times New Roman" size="24.0" />
                                     </font>
                                 </Label>
-                                <TextField fx:id="withdrawMoney6" prefHeight="57.0" prefWidth="89.0" style="-fx-border-style: hidden solid dotted hidden;" />
+                                <TextField fx:id="withdrawMoney6" prefHeight="57.0" prefWidth="89.0" promptText="300" style="-fx-border-style: hidden solid dotted hidden;" />
                             </HBox>
                     </GridPane>
             </center>
