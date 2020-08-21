@@ -4,6 +4,14 @@ public class ATM {
     private int[] Bills = new int[3];
     static int money;
 
+    public ATM(){
+        Bills[0] = 2;
+        Bills[1] = 3;
+        Bills[2] = 5;
+        setMoney();
+    }
+
+
     public boolean withdraw(int withdraw){
         if (withdraw <= money){
             int thou = 0;
