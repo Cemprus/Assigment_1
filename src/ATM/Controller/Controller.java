@@ -1,6 +1,7 @@
 package ATM.Controller;
 
 import ATM.Model.ATM;
+import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -59,14 +60,14 @@ public class Controller {
     private void progress(Label label, int withdrawal) {
         updateMoney();
         String[] s = new String[]{"3", "2", "1", ""};
-        withdrawals = new Timeline(new KeyFrame(Duration.millis(333), new EventHandler<ActionEvent>() {
+        withdrawals = new Timeline(new KeyFrame(Duration.millis(333), new EventHandler<>() {
             private int i = 0;
             @Override
             public void handle(ActionEvent event) {
-                label.setText(s[i]); // display next string
-                if (i==3 && s[i].equals(Boolean.toString(true))){
+                label.setText(s[i]);
+                if (i == 3 && s[i].equals(Boolean.toString(true))) {
                     label.setBackground(green);
-                } else if (i==3 && s[i].equals(Boolean.toString(false))){
+                } else if (i == 3 && s[i].equals(Boolean.toString(false))) {
                     label.setBackground(red);
                 } else {
                     label.setBackground(grey);
@@ -82,5 +83,37 @@ public class Controller {
         } catch (Exception e){
             e.printStackTrace();
         }
+    }
+
+    public void start(){
+        if (!result.getText().equals("")){
+            if (withdrawals.getStatus() == Animation.Status.RUNNING){
+                withdrawals.stop();
+            }
+            atm = new ATM();
+            Label[] labels = new Label[]{result, result1, result2, result3, result4, result5, result6};
+            for (Label l:labels) {
+                l.setText("");
+                l.setBackground(Background.EMPTY);
+            }
+
+        }
+        progress(result, 1500);
+        withdrawals.setOnFinished(actionEvent1 -> {
+            progress(result1, 700);
+            withdrawals.setOnFinished(actionEvent2 -> {
+                progress(result2, 400);
+                withdrawals.setOnFinished(actionEvent3 -> {
+                    progress(result3, 1100);
+                    withdrawals.setOnFinished(actionEvent4 -> {
+                        progress(result4, 1000);
+                        withdrawals.setOnFinished(actionEvent5 -> {
+                            progress(result5, 700);
+                            withdrawals.setOnFinished(actionEvent6 -> progress(result6, 300));
+                        });
+                    });
+                });
+            });
+        });
     }
 }
