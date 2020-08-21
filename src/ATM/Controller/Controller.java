@@ -75,7 +75,7 @@ public class Controller {
     private void progress(Label label, int withdrawal) {
         updateMoney();
         String[] s = new String[]{"3", "2", "1", ""};
-        withdrawals = new Timeline(new KeyFrame(Duration.millis(333), new EventHandler<>() {
+        withdrawals = new Timeline(new KeyFrame(Duration.millis(150), new EventHandler<>() {
             private int i = 0;
             @Override
             public void handle(ActionEvent event) {
