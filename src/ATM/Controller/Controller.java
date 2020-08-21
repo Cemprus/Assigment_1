@@ -9,6 +9,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
@@ -16,6 +17,20 @@ import javafx.scene.paint.Color;
 import javafx.util.Duration;
 
 public class Controller {
+    @FXML
+    private TextField withdrawMoney;
+    @FXML
+    private TextField withdrawMoney1;
+    @FXML
+    private TextField withdrawMoney2;
+    @FXML
+    private TextField withdrawMoney3;
+    @FXML
+    private TextField withdrawMoney4;
+    @FXML
+    private TextField withdrawMoney5;
+    @FXML
+    private TextField withdrawMoney6;
     @FXML
     private Label result;
     @FXML
@@ -98,18 +113,18 @@ public class Controller {
             }
 
         }
-        progress(result, 1500);
+        progress(result, Integer.parseInt(withdrawMoney.getText()));
         withdrawals.setOnFinished(actionEvent1 -> {
-            progress(result1, 700);
+            progress(result1, Integer.parseInt(withdrawMoney1.getText()));
             withdrawals.setOnFinished(actionEvent2 -> {
-                progress(result2, 400);
+                progress(result2, Integer.parseInt(withdrawMoney2.getText()));
                 withdrawals.setOnFinished(actionEvent3 -> {
-                    progress(result3, 1100);
+                    progress(result3, Integer.parseInt(withdrawMoney3.getText()));
                     withdrawals.setOnFinished(actionEvent4 -> {
-                        progress(result4, 1000);
+                        progress(result4, Integer.parseInt(withdrawMoney4.getText()));
                         withdrawals.setOnFinished(actionEvent5 -> {
-                            progress(result5, 700);
-                            withdrawals.setOnFinished(actionEvent6 -> progress(result6, 300));
+                            progress(result5, Integer.parseInt(withdrawMoney5.getText()));
+                            withdrawals.setOnFinished(actionEvent6 -> progress(result6, Integer.parseInt(withdrawMoney6.getText())));
                         });
                     });
                 });
