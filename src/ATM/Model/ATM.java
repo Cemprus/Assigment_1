@@ -31,19 +31,29 @@ public class ATM {
                 mon -= hun*100;
             }
             if (mon == 0){
+                boolean b1 = false, b2 = false;
                 if (thou <= Bills[0]){
+                    b1 = true;
                     Bills[0] -= thou;
-                } else {
-                    fhun+=2;
+                } else if (thou != 0){
+                    fhun += 2;
                 }
                 if (fhun <= Bills[1]){
+                    b2 = true;
                     Bills[1] -= fhun;
-                }else {
-                    hun+=5;
+                } else if (fhun != 0){
+                    hun += 5;
                 }
                 if (hun <= Bills[2]){
-                    Bills[2]-= hun;
+                    Bills[2] -= hun;
                     return true;
+                } else if (b1||b2){
+                    if (b1){
+                        Bills[0] += thou;
+                    }
+                    if (b2){
+                        Bills[1] += fhun;
+                    }
                 }
             }
         }
