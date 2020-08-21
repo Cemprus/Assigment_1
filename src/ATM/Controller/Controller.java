@@ -113,22 +113,65 @@ public class Controller {
             }
 
         }
-        progress(result, Integer.parseInt(withdrawMoney.getText()));
+        progress(result, getWithdrawMoney());
         withdrawals.setOnFinished(actionEvent1 -> {
-            progress(result1, Integer.parseInt(withdrawMoney1.getText()));
+            progress(result1, getWithdrawMoney1());
             withdrawals.setOnFinished(actionEvent2 -> {
-                progress(result2, Integer.parseInt(withdrawMoney2.getText()));
+                progress(result2, getWithdrawMoney2());
                 withdrawals.setOnFinished(actionEvent3 -> {
-                    progress(result3, Integer.parseInt(withdrawMoney3.getText()));
+                    progress(result3, getWithdrawMoney3());
                     withdrawals.setOnFinished(actionEvent4 -> {
-                        progress(result4, Integer.parseInt(withdrawMoney4.getText()));
+                        progress(result4, getWithdrawMoney4());
                         withdrawals.setOnFinished(actionEvent5 -> {
-                            progress(result5, Integer.parseInt(withdrawMoney5.getText()));
-                            withdrawals.setOnFinished(actionEvent6 -> progress(result6, Integer.parseInt(withdrawMoney6.getText())));
+                            progress(result5, getWithdrawMoney5());
+                            withdrawals.setOnFinished(actionEvent6 -> progress(result6, getWithdrawMoney6()));
                         });
                     });
                 });
             });
         });
+    }
+
+    public int getWithdrawMoney() {
+        if (withdrawMoney.getText().isEmpty()){
+            return 0;
+        }
+        return Integer.parseInt(withdrawMoney.getText());
+    }
+    public int getWithdrawMoney1() {
+        if (withdrawMoney1.getText().isEmpty()){
+            return 0;
+        }
+        return Integer.parseInt(withdrawMoney1.getText());
+    }
+    public int getWithdrawMoney2() {
+        if (withdrawMoney2.getText().isEmpty()){
+            return 0;
+        }
+        return Integer.parseInt(withdrawMoney2.getText());
+    }
+    public int getWithdrawMoney3() {
+        if (withdrawMoney3.getText().isEmpty()){
+            return 0;
+        }
+        return Integer.parseInt(withdrawMoney3.getText());
+    }
+    public int getWithdrawMoney4() {
+        if (withdrawMoney4.getText().isEmpty()){
+            return 0;
+        }
+        return Integer.parseInt(withdrawMoney4.getText());
+    }
+    public int getWithdrawMoney5() {
+        if (withdrawMoney5.getText().isEmpty()){
+            return 0;
+        }
+        return Integer.parseInt(withdrawMoney5.getText());
+    }
+    public int getWithdrawMoney6() {
+        if (withdrawMoney6.getText().isEmpty()){
+            return 0;
+        }
+        return Integer.parseInt(withdrawMoney6.getText());
     }
 }
