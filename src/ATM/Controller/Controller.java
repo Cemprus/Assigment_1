@@ -34,4 +34,11 @@ public class Controller {
         this.atm = atm;
     }
 
+    public void updateMoney(){
+        int[] mon = atm.getMoney();
+        money.setText(Integer.toString(mon[0]));
+        money1.setText(Integer.toString(mon[1]));
+        money2.setText(Integer.toString(mon[2]));
+        money3.setText(Integer.toString(mon[3]));
+    }
 }
