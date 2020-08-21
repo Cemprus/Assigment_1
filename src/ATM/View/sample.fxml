@@ -1,8 +1,182 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="ATM.Controller.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.Controller.Controller">
+    <children>
+        <BorderPane prefHeight="650.0" prefWidth="350.0">
+            <top>
+                <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ATM">
+                            <font>
+                                <Font name="Times New Roman Bold" size="64.0" />
+                            </font>
+                        </Text>
+                        <Button fx:id="StartTestButton" mnemonicParsing="false" onAction="#startTest" prefHeight="26.0" prefWidth="354.0" text="Start Withdrawals">
+                            <font>
+                                <Font name="Times New Roman Italic" size="20.0" />
+                            </font></Button>
+                    </children>
+                </VBox>
+            </top>
+            <bottom>
+                <VBox BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Money in the ATM: " />
+                                <Pane style="-fx-background-color: #ffffff; -fx-border-color: #5e5e5e;">
+                                    <children>
+                                        <Label fx:id="money" layoutX="3.0" layoutY="3.0" text="0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thousand bills in the ATM:" />
+                                <Pane style="-fx-background-color: #ffffff; -fx-border-color: #5e5e5e;">
+                                    <children>
+                                        <Label fx:id="money1" layoutX="3.0" layoutY="3.0" text="0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fivehundred bills in the ATM:" />
+                                <Pane style="-fx-background-color: #ffffff; -fx-border-color: #5e5e5e;">
+                                    <children>
+                                        <Label fx:id="money2" layoutX="3.0" layoutY="3.0" text="0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hundred bills in the ATM:" />
+                                <Pane style="-fx-background-color: #ffffff; -fx-border-color: #5e5e5e;">
+                                    <children>
+                                        <Label fx:id="money3" layoutX="3.0" layoutY="3.0" text="0" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </bottom>
+            <center>
+                <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden solid dotted hidden;" text="Withdraw 1500" textAlignment="CENTER" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden solid dotted hidden;" text="Withdraw 700" textAlignment="CENTER" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden solid dotted hidden;" text="Withdraw 400" textAlignment="CENTER" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden solid dotted hidden;" text="Withdraw 1100" textAlignment="CENTER" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden solid dotted hidden;" text="Withdraw 1000" textAlignment="CENTER" GridPane.rowIndex="5">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden solid dotted hidden;" text="Withdraw 700" textAlignment="CENTER" GridPane.rowIndex="6">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden solid solid hidden;" text="Withdraw 300" textAlignment="CENTER" GridPane.rowIndex="7">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden solid hidden hidden;" text="Action" textAlignment="CENTER">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Result" textAlignment="CENTER" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="result" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden hidden dotted hidden;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="result1" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden hidden dotted hidden;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="result2" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden hidden dotted hidden;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="result3" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden hidden dotted hidden;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="result4" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden hidden dotted hidden;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="result5" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden hidden dotted hidden;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="result6" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-style: hidden hidden solid hidden;" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                            <font>
+                                <Font name="Times New Roman" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </GridPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
