@@ -24,7 +24,7 @@
                                 <Font name="Times New Roman Bold" size="64.0" />
                             </font>
                         </Text>
-                        <Button fx:id="StartTestButton" mnemonicParsing="false" onAction="#startTest" prefHeight="26.0" prefWidth="354.0" text="Start Withdrawals">
+                        <Button fx:id="StartTestButton" mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="354.0" text="Start Withdrawals">
                             <font>
                                 <Font name="Times New Roman Italic" size="20.0" />
                             </font></Button>
