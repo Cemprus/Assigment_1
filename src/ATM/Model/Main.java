@@ -1,4 +1,4 @@
-package sample;
+package ATM.Model;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,4 +1,4 @@
-package sample;
+package ATM.Controller;
 
 public class Controller {
 }
